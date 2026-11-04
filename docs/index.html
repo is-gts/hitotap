@@ -28,6 +28,11 @@ button:disabled{opacity:.6;cursor:default}
 .msg{font-size:14px;min-height:1.4em;margin:8px 0 0}
 .msg.ok{color:var(--ok)}
 .hp{position:absolute;left:-9999px}
+.features{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+.features h2{font-size:22px;margin:0 0 20px}
+.features dl{margin:0;display:grid;gap:18px}
+.features dt{font-weight:600;margin:0 0 2px}
+.features dd{margin:0;color:var(--muted);font-size:15px}
 footer{margin-top:40px;color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -40,6 +45,17 @@ footer{margin-top:40px;color:var(--muted);font-size:13px}
 <ul><li>今日の気分を絵文字でタップ、書くのは任意</li><li>続いた日数をカレンダーで可視化</li><li>月ごとの気分グラフ</li></ul>
 <form><input type="email" name="email" placeholder="メールアドレス" required autocomplete="email"><input class="hp" name="hp" tabindex="-1" autocomplete="off"><button>事前登録</button></form>
 <p class="msg"></p>
+<section class="features">
+<h2>できること</h2>
+<dl>
+<dt>絵文字1つで今日を記録</dt><dd>😊😐😩など、今日の気分を絵文字でタップするだけ。文章を書かなくても日記が続きます。</dd>
+<dt>一言メモは任意</dt><dd>書きたい日だけ、一言だけ。長文を書く必要はありません。</dd>
+<dt>継続カレンダー</dt><dd>記録した日がカレンダーに色づき、続いた日数が見えてモチベーションになります。</dd>
+<dt>月ごとの気分グラフ</dt><dd>1か月の気分の推移をグラフで振り返り。調子の波に気づけます。</dd>
+<dt>毎日のリマインド通知</dt><dd>決めた時間に「今日はどんな日？」と通知。忘れずに記録できます。</dd>
+<dt>写真を1枚添付</dt><dd>その日の1枚を添えられます。見返すときの手がかりに。</dd>
+</dl>
+</section>
 <footer>登録は無料。公開時にメールで1通だけお知らせします。メールアドレスはリリース通知のみに使用し、第三者には提供しません。</footer>
 </main>
 <script>
